@@ -68,7 +68,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
  figcaption {
      line-height: 1em;
-     font-size: 1em;
+     font-size: .75em;
  }
 
  p {
@@ -76,6 +76,13 @@ You will find this is far easier than the opposite task of using CSS to cram you
      font-size: 1.2em;
      text-align: center;
      font-family: 'Cormorant Garamond', serif;
+ }
+
+ .top {
+     line-height: 1em;
+     text-color: black;
+     margin-top: 65px;
+     text-align: justify;
  }
 
  footer {
@@ -86,13 +93,13 @@ You will find this is far easier than the opposite task of using CSS to cram you
  }
 
  .housed {
-     background-color: #32a875;
+     background-color: #468AE1;
      padding: 2px;
      font-size: 1.5em;
  }
 
  .unhoused {
-     background-color: #a8325b;
+     background-color: #D01C0A;
      padding: 2px;
      font-size: 1.5em;
  }
@@ -105,11 +112,11 @@ You will find this is far easier than the opposite task of using CSS to cram you
  }
 
  .stat1 {
-     color: #32a875;
+     color: #468AE1;
  }
 
  .stat2 {
-     color: #a8325b;
+     color: #D01C0A;
  }
 
  .icon-border {
@@ -129,8 +136,19 @@ You will find this is far easier than the opposite task of using CSS to cram you
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
  @media(min-width: 681px) {
+
      /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+     p {
+         line-height: 1.6em;
+         font-size: 1.5em;
+         text-align: center;
+     }
+
+     .icon-container h6 {
+         font-size: 2.5em;
+         text-align: center;
+     }
  }
 
  /*********************************************************************
@@ -148,14 +166,24 @@ You will find this is far easier than the opposite task of using CSS to cram you
      }
 
      p {
-         line-height: 1.3em;
+         line-height: 1.4em;
          font-size: 1.5em;
          text-align: center;
      }
 
+     .icon-container h6 {
+         font-size: 2.5em;
+         text-align: center;
+     }
+
      .icon-container h5 {
-         font-size: 2em;
+         font-size: 1.75em;
          line-height: 1.5em;
+         text-align: center;
+     }
+
+     .icon-container h4 {
+         font-size: 2.5em;
          text-align: center;
      }
 
