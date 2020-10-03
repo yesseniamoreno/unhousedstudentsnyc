@@ -1,0 +1,171 @@
+ /*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+ /*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+ /*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     /* Sets default font-size to 16px, ensuring 1em = 16px; */
+     font-size: 16px;
+ }
+
+ img {
+     width: 100%;
+     image-align: center;
+ }
+
+ .icon-container img {
+     width: 50%;
+ }
+
+ h1 {
+     font-size: 3em;
+     text-align: center;
+ }
+
+ h2 {
+     font-size: 2em;
+     text-align: center;
+     font-family: 'Cormorant Garamond', serif;
+ }
+
+ h3 {
+     font-size: 1.4em;
+     text-align: center;
+     font-family: 'Cormorant Garamond', serif;
+ }
+
+ .icon-container h4 {
+     font-size: 1.75em;
+     text-align: center;
+ }
+
+ .icon-container h5 {
+     font-size: 1em;
+     line-height: 1.5em;
+     text-align: center;
+ }
+
+ .icon-container h6 {
+     font-size: 1.75em;
+     text-align: center;
+ }
+
+ figcaption {
+     line-height: 1em;
+     font-size: 1em;
+ }
+
+ p {
+     line-height: 1.75em;
+     font-size: 1.2em;
+     text-align: center;
+     font-family: 'Cormorant Garamond', serif;
+ }
+
+ footer {
+     line-height: 1em;
+     text-color: black;
+     margin-top: 25px;
+     text-align: justify;
+ }
+
+ .housed {
+     background-color: #32a875;
+     padding: 2px;
+     font-size: 1.5em;
+ }
+
+ .unhoused {
+     background-color: #a8325b;
+     padding: 2px;
+     font-size: 1.5em;
+ }
+
+ .stats {
+     display: flex;
+     justify-content: space-between;
+     font-size: 3em;
+     justify-content: center;
+ }
+
+ .stat1 {
+     color: #32a875;
+ }
+
+ .stat2 {
+     color: #a8325b;
+ }
+
+ .icon-border {
+     border: 1.5px solid Black;
+     border-width: medium;
+     margin: 0.5em;
+     padding: 0.5em;
+ }
+
+ .main {
+     margin: auto;
+     padding: 7px;
+     max-width: 90%;
+ }
+
+ /*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+ @media(min-width: 681px) {
+     /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+ }
+
+ /*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+
+
+*********************************************************************/
+ @media(min-width: 729px) {
+
+     /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+     h3 {
+         font-size: 1.75em;
+         text-align: center;
+     }
+
+     p {
+         line-height: 1.3em;
+         font-size: 1.5em;
+         text-align: center;
+     }
+
+     .icon-container h5 {
+         font-size: 2em;
+         line-height: 1.5em;
+         text-align: center;
+     }
+
+     .icon-container img {
+         width: 30%;
+     }
+
+     .stats {
+         display: flex;
+         justify-content: space-between;
+         font-size: 4em;
+     }
+ }
